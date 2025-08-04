@@ -73,4 +73,8 @@ void fibo_main(){
 
 int main(){
   ascii();
+  remainder();
+  checkOddorEven();
+  fibo_main();
+  swap();
 }
