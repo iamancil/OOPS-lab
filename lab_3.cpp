@@ -19,7 +19,7 @@ void prime(){
         }
       }
       if(x==0){
-        cout << i << " ";
+        cout << i << endl;
       }
       
     }

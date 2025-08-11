@@ -4,7 +4,7 @@ void ascii(){
   char c;
   cout << "Enter the character:";
   cin >> c;
-  cout << "Ascii value is:" << (int)c;
+  cout << "Ascii value is:" << (int)c << endl;
 }
 
 void remainder(){
@@ -14,7 +14,7 @@ void remainder(){
   cin >> n;
   cout << "Enter the divisor:";
   cin >> m;
-  cout << "quotient:" << n/m << "\n" << "remainder:" << n%m;
+  cout << "quotient:" << n/m << "\n" << "remainder:" << n%m << endl;
 }
 
 bool checkEven(int n){
@@ -31,10 +31,10 @@ void checkOddorEven(){
   cin >> n;
 
   if (checkEven(n) == true){
-    cout << "even";
+    cout << "even" << endl;
   }
   else{
-    cout << "odd";
+    cout << "odd" << endl;
   }
 }
 
@@ -67,7 +67,7 @@ void fibo_main(){
   cout << "Enter limit:";
   cin >> lim;
   for(int i=0;i<lim;i++){
-    cout << fibo(i) << " ";
+    cout << fibo(i) << endl;
   }
 }
 
