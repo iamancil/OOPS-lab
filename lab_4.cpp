@@ -77,8 +77,37 @@ void addMatrix(){
   }
 }
 
+void multDiagonal(){
+  int rows, columns;
+  cout << "Enter the no of rows: ";
+  cin >> rows;
+  cout << "and columns: ";
+  cin >> columns;
+  int mat1[rows][columns];
+  int mat2[rows][columns];
+  cout << "For 1st matrix:" << endl;
+  for(int i=0;i<rows;i++){
+    for(int j=0;j<columns;j++){
+      cout << "Enter the " << j << "th element of " << i << "th row: ";
+      cin >> mat1[i][j];
+    }
+  }
+  cout << "For 2nd matrix:" << endl;
+  for(int i=0;i<rows;i++){
+    for(int j=0;j<columns;j++){
+      cout << "Enter the " << j << "th element of " << i << "th row: ";
+      cin >> mat2[i][j];
+    }
+  }
+  cout << "sum of diagonal elements";
+  int mat3[rows][columns];
+  for(int i=0;i<rows;i++){
+    cout << mat1[i][i]*mat2[i][i] << endl;
+  }
+}
+
 int main(){
-  addMatrix();
-  maxElement();
-  average();
+  multDiagonal();
+  //maxElement();
+  //average();
 }
